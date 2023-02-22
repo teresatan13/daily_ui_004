@@ -1,3 +1,9 @@
-/* p {
-    color: red;
-} */
+.current_display {
+    border: 2px solid green ;
+    width: 25%;
+}
+
+.row_1 {
+    border: 1px solid black;
+    display: inline-block;
+}
