@@ -7,26 +7,30 @@ p {
     margin: 20px auto;
 }
 
+i {
+    height: 18px;
+}
+
 .row_1 {
     width: 25%;
-    margin: -17px auto;
+    margin: -21px auto;
 }
 
 .row_2 {
     width: 25%;
-    margin: 16px auto;
-
+    margin: 19px auto 0;
 }
 
-.row_1, .row_2 {
-   
+.row_3 {
+    width: 25%;
+    margin: -2px auto 0;
 }
 
 .button {
     border: 1px solid black;
     display: inline-block;
     zoom: 1;
-    width: 15.9%;
+    width: 16.9%;
     text-align: center;
     padding: 5px;
 }
