@@ -1,11 +1,16 @@
 .divide {
-    margin: 2px 2px;
     position: absolute;
+    margin: 2px 2px;
 }
 
 .plus_minus {
-    margin: 2px 2px;
     position: absolute;
+    margin: 2px 2px;
+}
+
+.multiply {
+    position: absolute;
+    margin: 3px 3px;
 }
 
 
