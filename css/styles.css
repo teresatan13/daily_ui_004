@@ -1,16 +1,16 @@
-.divide {
-    position: absolute;
-    margin: 2px 2px;
-}
-
-.plus_minus {
+.divide, .plus_minus, .minus, .plus {
     position: absolute;
     margin: 2px 2px;
 }
 
 .multiply {
     position: absolute;
-    margin: 3px 3px;
+    margin: 3px 4px;
+}
+
+.square_root {
+    font: FontAwesome;
+    position: absolute;
 }
 
 
