@@ -1,11 +1,11 @@
 .divide, .plus_minus, .minus, .plus {
     position: absolute;
-    margin: 2px 2px;
+    margin: 10px 4px;
 }
 
 .multiply {
     position: absolute;
-    margin: 3px 4px;
+    margin: 11px 5px;
 }
 
 .square_root {
