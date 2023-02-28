@@ -1,8 +1,10 @@
-.fa {
-    font-family: FontAwesome;
-    margin: 0 auto;
-    top: 64px;
-    left: 18.3rem;
+.divide {
+    margin: 2px 2px;
+    position: absolute;
+}
+
+.plus_minus {
+    margin: 2px 2px;
     position: absolute;
 }
 

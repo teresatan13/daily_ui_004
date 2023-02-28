@@ -26,21 +26,34 @@
             <td> <input type="button" value="MR" onclick="" /> </td>
             <td> <input type="button" value="M -" onclick="" /> </td>
             <td> <input type="button" value="M +" onclick="" /> </td>
-            <td> <input type="button" value="C" onclick="" /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" /> </td>
         </tr>
 
         <!-- Row 2  -->
         <tr>
             <td> <input type="button" value="%" onclick="" /> </td>
-            <td> <input type="button" value="7" onclick="" /> </td>
+            <td> <input type="button" value="7" onclick="display ('7')" /> </td>
             <td> <input type="button" value="8" onclick="" /> </td>
             <td> <input type="button" value="9" onclick="" /> </td>
             <td> 
-                <i class="fa fa-solid fa-divide"></i>
+                <i class="divide fa-solid fa-divide"></i>
                 <input type="button" value="" onclick="" /> 
             </td>
         </tr>
 
+        <!-- Row 3 -->
+        <tr>
+            <td>
+                <i class="plus_minus fa-sharp fa-solid fa-plus-minus"></i>
+                <input type="button" value="" onclick="" /> 
+            </td>
+            <td> <input type="button" value="4" onclick="display ('7')" /> </td>
+            <td> <input type="button" value="5" onclick="display ('7')" /> </td>
+            <td> <input type="button" value="6" onclick="display ('7')" /> </td>
+            <td>
+                <i class="fa-solid fa-xmark"></i>
+            </td>
+        </tr>
     </table>
 
     <!-- create buttons for each digit and operator
@@ -50,22 +63,6 @@
     <!-- create specialty functions to calculate: mortgage, interest rate, recipe costing,
     and use icons as display -->
 
-            
-
-    <!-- Row 3 -->
-    <!-- <div class="row_3">
-        <div class="button">
-            <i class="fa-sharp fa-solid fa-plus-minus"></i>
-        </div><div class="button">
-            4
-        </div><div class="button">
-            5
-        </div><div class="button">
-            6
-        </div><div class="button">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-    </div> -->
 
     <!-- Row 4 -->
     <!-- <div class="row_4">
