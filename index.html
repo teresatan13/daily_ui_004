@@ -17,10 +17,10 @@
 
     create area to display the current calculation -->
 
-    <!-- create specialty functions to calculate: mortgage, interest rate, recipe costing,
+    <!-- create specialty functions to calculate: mortgage, fahrenheit to celcius, lb to kg,
     and use icons as display -->
 
-    <table>
+    <table class="calculator">
         <!-- Display  -->
         <tr>
             <td> <input type="text" class="display" /> </td>
@@ -28,16 +28,16 @@
 
         <!-- Row 1 -->
         <tr>
-            <td> <input type="button" value="MC" onclick="" /> </td>
+            <td> <input type="button" value="MC" onclick="" id="mc"/> </td>
             <td> <input type="button" value="MR" onclick="" /> </td>
             <td> <input type="button" value="M -" onclick="" /> </td>
             <td> <input type="button" value="M +" onclick="" /> </td>
-            <td> <input type="button" value="C" onclick="clearScreen()" /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn"/> </td>
         </tr>
 
         <!-- Row 2  -->
         <tr>
-            <td> <input type="button" value="%" onclick="" /> </td>
+            <td> <input type="button" value="%" onclick="" id="percent"/> </td>
             <td> <input type="button" value="7" onclick="display('7')" /> </td>
             <td> <input type="button" value="8" onclick="display('8')" /> </td>
             <td> <input type="button" value="9" onclick="display('9')" /> </td>
@@ -51,7 +51,7 @@
         <tr>
             <td>
                 <i class="plus_minus fa-sharp fa-solid fa-plus-minus fa-xs"></i>
-                <input type="button" value="" onclick="calculate()" /> 
+                <input type="button" value="" onclick="calculate()" id="plus_minus"/> 
             </td>
             <td> <input type="button" value="4" onclick="display('4')" /> </td>
             <td> <input type="button" value="5" onclick="display('5')" /> </td>
@@ -66,7 +66,7 @@
         <tr>
             <td>
                 <i class="fa-solid fa-square-root"></i>
-                <input type="button" value="" onclick="calculate()" />
+                <input type="button" value="" onclick="calculate()" id="square_root"/>
             </td>
             <td> <input type="button" value="1" onclick="display('1')" /> </td>
             <td> <input type="button" value="2" onclick="display('2')" /> </td>
@@ -79,16 +79,34 @@
         
         <!-- Row 5 -->
         <tr>
-            <td> <input type="button" value="AC" onclick="clearScreen()" /> </td>
+            <td> <input type="button" value="AC" onclick="clearScreen()" id="ac"/> </td>
             <td> <input type="button" value="0" onclick="display('0')" /> </td>
-            <td> <input type="button" value="." onclick="display('.')" /> </td>
-            <td> <input type="button" value="=" onclick="calculate()" /> </td>
+            <td> <input type="button" value="." onclick="display('.')" style="font-weight: bold;" /> </td>
+            <td> <input type="button" value="=" onclick="calculate()" style="font-size: small; font-weight: bold;"/> </td>
             <td>
                 <i class="plus fa-solid fa-plus fa-xs"></i>
                 <input type="button" value="" onclick="calculate()" />
             </td>
         </tr>
-        
+
+        <!-- Row 6 -->
+        <tr>
+            <td>
+                <i class="mortgage fa-solid fa-house"></i>
+                <input type="button" value="" onclick="calculate()" id="mortgage"/>
+            </td>
+            <td>
+                <i class="temperature fa-solid fa-temperature-low"></i>
+                <input type="button" value="" onclick="calculate()" />
+            </td>
+            <td> <input type="button" value="lb / kg" onclick="calculate()" /> </td>
+            <td>
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <input type="button" value="" onclick="calculate()" />
+            </td>
+        </tr>
+
+
     </table>
 </body>
 </html>
