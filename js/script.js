@@ -1,3 +1,9 @@
+class Calculator {
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement
+    }
+}
+
 function clearScreen() {
     document.getElementById("result").value = '';
 }
@@ -14,9 +20,8 @@ function calculate() {
     document.getElementById("result").value = result;
 }
 
-function equal() {
-    let expression = document.getElementById;
-    if(expression) {
-        document.getElementById = eval(expression)
-    }
-}
+
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand')
+const currentOperandTextElement = document.querySelector('[data-current-operand')

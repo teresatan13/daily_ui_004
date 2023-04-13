@@ -20,6 +20,7 @@ td {
     margin: 30px auto;
     background-color: #15133C;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    grid-template-rows: minmax(120px, auto);
 }
     
 .display {
@@ -89,3 +90,16 @@ input:active[type=button] {
     position: absolute;
     margin: 7px 19px;
 }
+
+/* .span-two {
+
+} */
+
+/* .output {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+} */
