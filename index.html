@@ -8,6 +8,7 @@
     <!-- Styles  -->
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4e1129b10f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +21,11 @@
 
     <table class="calculator" cellspacing="0">
         <!-- Display  -->
+        <div class="output">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+        </div>
+
         <tr>
             <td> <input type="text" class="display" id="result" disabled /> </td>
         </tr>
@@ -41,7 +47,7 @@
             <td> <input type="button" value="9" onclick="display('9')" /> </td>
             <td> 
                 <i class="divide fa-solid fa-divide fa-xs"></i>
-                <input type="button" value="" onclick="calculate()" /> 
+                <input type="button" value="" onclick="display('/')" data-operation /> 
             </td>
         </tr>
 
@@ -49,14 +55,14 @@
         <tr>
             <td>
                 <i class="plus_minus fa-sharp fa-solid fa-plus-minus fa-xs"></i>
-                <input type="button" value="" onclick="calculate()" id="plus_minus"/> 
+                <input type="button" value="" onclick="calculate()" id="plus_minus" data-operation/> 
             </td>
             <td> <input type="button" value="4" onclick="display('4')" /> </td>
             <td> <input type="button" value="5" onclick="display('5')" /> </td>
             <td> <input type="button" value="6" onclick="display('6')" /> </td>
             <td>
                 <i class="multiply fa-solid fa-xmark fa-xs"></i>
-                <input type="button" value="" onclick="calculate()" />
+                <input type="button" value="" onclick="calculate()" data-operation />
             </td>
         </tr>
 
@@ -71,20 +77,19 @@
             <td> <input type="button" value="3" onclick="display('3')" /> </td>
             <td>
                 <i class="minus fa-solid fa-minus fa-xs"></i>
-                <input type="button" value="" onclick="calculate()" />
+                <input type="button" value="" onclick="calculate()" data-operation />
             </td>
         </tr>
         
         <!-- Row 5 -->
         <tr>
-            <td> <input type="button" value="AC" onclick="clearScreen()" id="ac"/> </td>
             <td> <input type="button" value="0" onclick="display('0')" /> </td>
             <td> <input type="button" value="." onclick="display('.')" style="font-weight: bold;" /> </td>
-            <td> <input type="button" value="=" onclick="calculate()" style="font-size: medium; font-weight: bold;"/> </td>
             <td>
                 <i class="plus fa-solid fa-plus fa-xs"></i>
                 <input type="button" value="" onclick="calculate()" />
             </td>
+            <td class="span-two"> <input type="button" value="=" onclick="calculate()" style="font-size: medium; font-weight: bold;"/> </td>
         </tr>
 
         <!-- Row 6 -->
@@ -98,15 +103,12 @@
                 <input type="button" value="" onclick="calculate()" />
             </td>
             <td> <input type="button" value="lb/kg" onclick="calculate()" /> </td>
-            <td>
-                <!-- <i class="fa-solid fa-house"></i> -->
-                <!-- <input type="button" value="" onclick="" /> -->
-            </td>
+            <td class="span-two"> <input type="button" value="AC" onclick="clearScreen()" id="ac"/> </td>
         </tr>
         
     </table>
 
-    <script type="text/javascript" src="js/script.js"></script>
+   
 
 </body>
 </html>
