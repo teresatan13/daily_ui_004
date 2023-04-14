@@ -1,24 +1,30 @@
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
     }
 }
 
-function clearScreen() {
-    document.getElementById("result").value = '';
-}
+    function clearScreen() {
+        document.getElementById("result").value = '';
+    }
+
+    function remove() {
+
+    }
 
 
-function display(value) {
-    document.getElementById("result").value += value;
-}
+    function display(value) {
+        document.getElementById("result").value += value;
+    }
 
 
-function calculate() {
-    let expression = document.getElementById("result").value;
-    let result = eval(expression);
-    document.getElementById("result").value = result;
-}
+    function calculate() {
+        let expression = document.getElementById("result").value;
+        let result = eval(expression);
+        document.getElementById("result").value = result;
+    }
+    
 
 
 const numberButtons = document.querySelectorAll('[data-number]')
